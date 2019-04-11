@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:fillViewport="true"
+    >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/lay1"
+                android:background="@color/colorPrimary"
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageview_accountprofile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@mipmap/ic_launcher"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageview_addimage"
+                    android:layout_alignBottom="@+id/imageview_accountprofile"
+                    app:backgroundTint="@color/colorAccent"
+                    android:src="@drawable/plusicon"
+                    android:layout_alignEnd="@id/imageview_accountprofile"
+                    android:layout_alignRight="@id/imageview_accountprofile"
+                    app:fabSize="mini"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_below="@id/lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Profile Details"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/editText_fullname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Full Name"
+                            android:imeOptions="actionDone"
+                            android:maxLines="2"
+                            android:inputType="text"
+                            android:textColorHint="@color/colorPrimary" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/editText_gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Gender"
+                            android:imeOptions="actionDone"
+                            android:textColorHint="@color/colorPrimary"
+                            android:inputType="text"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/editText_DOB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Date of Birth"
+                            android:imeOptions="actionDone"
+                            android:textColorHint="@color/colorPrimary"
+                            android:maxLines="1"
+                            android:inputType="date"
+                            android:digits="1234567890/"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/editText_cnic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="CNIC Number"
+                            android:imeOptions="actionDone"
+                            android:textColorHint="@color/colorPrimary"
+                            android:maxLines="1"
+                            android:inputType="date"
+                            android:digits="1234567890-"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/editText_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Home Address "
+                            android:imeOptions="actionDone"
+                            android:textColorHint="@color/colorPrimary"
+                            android:maxLines="10"
+                            android:inputType="text"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                        <Button
+                            android:id="@+id/btn_updateprofile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="UPDATE"
+                            android:textColor="@color/textcolor"
+                            android:background="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+
+                            />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ecommunity">
+
+    <compatible-screens>
+
+        <!-- all small size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="xxhdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="xxxhdpi"
+            android:screenSize="small" />
+        <!-- all normal size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xxhdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xxxhdpi"
+            android:screenSize="normal" />
+        <!-- all large size screens -->
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="xxhdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="xxxhdpi"
+            android:screenSize="large" />
+    </compatible-screens>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TotalComplaints_Activity"></activity>
+        <activity android:name=".SubmitComplaints_Activity" />
+        <activity android:name=".MunicipalServices_Categories.IllegalBillboards_Categories" />
+        <activity android:name=".MunicipalServices_Categories.Encroachment_Categories" />
+        <activity android:name=".MunicipalServices_Categories.WaterConnection_Categories" />
+        <activity android:name=".MunicipalServices_Categories.Cleanliness_Categories" />
+        <activity android:name=".LawAndOrder_Categories.TrafficPolice_Categories" />
+        <activity android:name=".LawAndOrder_Categories.MotorwayPolice_Categories" />
+        <activity android:name=".LawAndOrder_Categories.Prisons_Categories" />
+        <activity android:name=".LawAndOrder_Categories.Police_Categories" />
+        <activity android:name=".EnergyPower_Categories.Gas_Categories" />
+        <activity android:name=".EnergyPower_Categories.Electricity_Categories" />
+        <activity android:name=".Education_Categories.HigherEducationCommission_Categories" />
+        <activity android:name=".Education_Categories.PrivateSchools_Categories" />
+        <activity android:name=".Education_Categories.Universities_Categories" />
+        <activity android:name=".Education_Categories.Colleges_Categories" />
+        <activity android:name=".Education_Categories.ElementarySecondary_Categories" />
+        <activity android:name=".CitizanRights_Categories.DenialofRights_Categories" />
+        <activity android:name=".CitizanRights_Categories.RighttoInformation_Categories" />
+        <activity android:name=".CitizanRights_Categories.RighttoServices_Categories" />
+        <activity android:name=".CitizanRights_Categories.ConsumerRights_Categories" />
+        <activity android:name=".CitizanRights_Category" />
+        <activity android:name=".MunicipalServices_Activity" />
+        <activity android:name=".LawAndOrder_Activity" />
+        <activity android:name=".EnergyPower_Activity" />
+        <activity android:name=".Education_Activity" />
+        <activity android:name=".CitizanRights_Activity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".FeedBackActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ResolvedComplaint_Activity" />
+        <activity android:name=".InProgrssComplaint_Activity" />
+        <activity android:name=".NewComplaint_Activity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
